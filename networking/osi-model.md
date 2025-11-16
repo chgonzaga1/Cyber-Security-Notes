@@ -9,7 +9,7 @@ or in bits to transfer data. Examples include optical fiber cable, switch and ro
 What Layer 1 describes: Sending raw bits of 0 and 1 over a physical medium. It also defines voltages, frequencies and types of single. 
 For cybersecurity, wire tapping (recording signals), jamming signals, and cutting off physical connections is considered a layer 1 attack
 
-**Layer 2**
+**Layer 2- Data Link Layer**
 
 This layer deals with transferring data between devices that are on the same local network, meaning devices that are transferring from the switches, ethernet cables and wifi access point. It is the policy to talk over the signals. We can picture it as a local delivery system inside your office. 
 
