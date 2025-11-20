@@ -58,4 +58,14 @@ Port 80 belongs to HTTP, Port 443 is the secure one
 SSH belongs to SSH
 
 At the Transport layer 4 layer,
+it also decides whethere data should have error check regulation but slow or no guaranntee to be deliever but quick
+Segementation also occurs here including flow control management(making sure that the reciever is not over whelmed)
 
+There Two Main Transport Layer protocols, TCP and UDP, which I discussed earelier.
+TCP involves guaranteed delivery, ordered data, error checking, retransmissions and 3 way handshake.
+TCP based services include HTTPS, SSH, FTP, and Email.
+
+UDP involves quick delivery but not guarantee delievery, no order, and very low latency.
+Online Gaming, Streaming and VoIP are examples of UDP. 
+
+In Major Layer 
