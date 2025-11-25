@@ -40,3 +40,19 @@ A router might ask, What part is the network? using the subnet mask,
 
 The 255s tell you that 191.168.1 are the network part, hence 255.255.255.x
 while x.x.x.20 is the host part 
+
+Calcuating The Network Address with a Subnet:
+
+To figure out the network address of an IP, you compare the IP address and the subnet mask bit by bit using a rule called a bitwise AND.
+When you AND the two together, the final result tells you which network that IP belongs to.
+
+We will need to use THE AND rules in order to calculate the binary number.
+1 AND 1 = 1
+1 and 0 = 0
+0 and 1 = 0
+0 and 0 = 0
+
+
+
+
+
