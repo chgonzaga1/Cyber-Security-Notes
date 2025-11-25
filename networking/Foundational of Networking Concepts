@@ -10,3 +10,33 @@ It’s a one-to-many communication  but only to devices that are part of that sp
 Broadcoast means to ALL Recievers 
 
 A broadcast domain is a “zone” in a network where broadcast messages can reach all devices. A router is a device that seperates domains. 
+
+
+A collision domain is a section of a network where data packets can “collide” with each other because they share the same communication path.
+
+On a hub, everything is shared.
+Any packet sent in one port is sent out of every port.
+Because of this, the entire hub is one big collision domain.
+
+On a switch, it’s different.
+Switches send data only to the device it’s meant for.
+This means each switch port is its own collision domain, which prevents collisions.
+
+A subnet mask is a number that that indicates a device which part of an IP address, is the **network** and which part is the **host.**
+You need a subnet mask because without it, devices can’t find the network and can’t communicate, properly. Subnet masks are 4 bytes.
+
+Every IP address class has a default subnet mask
+Class A → 255.0.0.0 (/8)
+Class B → 255.255.0.0 (/16)
+Class C → 255.255.255.0 (/24)
+
+The (/8), (/16), (/24) indicates how many 11111111s are there in a 4 byte, and it's the 11111111 that masking the net
+
+ex) 11111111 00000000 00000000 00000000 = 255.0.0.0
+
+Here's an example how subnet masks are being used:
+A debvce has an IP Address of  192.168.1.20 and a subnet mask of 255.255.255.0 (/24)
+A router might ask, What part is the network? using the subnet mask, 
+
+The 255s tell you that 191.168.1 are the network part, hence 255.255.255.x
+while x.x.x.20 is the host part 
