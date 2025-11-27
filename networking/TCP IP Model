@@ -1,0 +1,10 @@
+The TCP/IP Model is the practical and current, real-world networking model used by the entire internet.
+While the OSI Model is more of a conceptual framework, the TCP/IP model is the actual model computers and routers follow when sending data today.
+
+TCP/IP stands for:
+TCP — Transmission Control Protocol
+IP — Internet Protocol
+
+These are the two core protocols that form the basis of internet communication.
+Developed by The U.S. Department of Defense in the 1970s to make large networks more reliable, 
+decentralized and manageable/control, and able to keep working even if parts of the network failed.
