@@ -1,0 +1,27 @@
+IP helps devices talk to each other by identifying the destination using an IP address. 
+But to actually send data between applications on different devices, we need transport protocols. 
+The two used for this are UDP and TCP.
+
+UDP is a simple, fast, connectionless protocol.
+It doesn’t set up a connection and doesn’t check if the data arrived.
+It just sends the packet and moves on.
+Because of this, UDP is great for things where speed is more important than perfection—like voice calls
+or video streaming. But the downside is there’s no confirmation that the receiver actually got the data.
+
+Ports identify which application is sending or receiving the data. UDP uses port numbers from **1 to 65535.**
+
+TCP (Transmission Control Protocol)
+
+TCP is connection-oriented and focuses on reliable delivery.
+It makes sure data arrives correctly and in the right order.
+To start communication, TCP uses a three-way handshake:
+
+SYN – Client wants to connect and sends a SYN.
+SYN-ACK – Server replies with SYN-ACK.
+ACK – Client responds with ACK. Connection is now open.
+TCP uses sequence numbers and acknowledgements so the receiver knows exactly what data arrived and 
+what might need to be resent.
+
+TCP also uses ports 1–65535, with port 0 reserved, same as UDP 
+
+In summary, TCP is all aobut accuracy and UDP is more of speed delivery
