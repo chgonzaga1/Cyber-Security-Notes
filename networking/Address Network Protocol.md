@@ -77,5 +77,14 @@ tcpdump -r arp.pcapng -n -v
 tcpdump is the command for packetsniffingtool. -r is read the file, arp.pcapng is the file name
 -n show ip and mac only as numbers, -v provides more details and we get
 
-17:23:44.506615 ARP, Ethernet (len 6), IPv4 (len 4), Request who-has 192.168.66.1 tell 192.168.66.89, length 28
-17:23:44.510182 ARP, Ethernet (len 6), IPv4 (len 4), Reply 192.168.66.1 is-at 44:df:65:d8:fe:6c, length 28
+1. 17:23:44.506615 ARP, Ethernet (len 6), IPv4 (len 4), Request who-has 192.168.66.1 tell 192.168.66.89, length 28
+2. 17:23:44.510182 ARP, Ethernet (len 6), IPv4 (len 4), Reply 192.168.66.1 is-at 44:df:65:d8:fe:6c, length 28
+
+Using TCP, These two lines show the exact ARP exchange:
+
+ARP Request:
+192.168.66.89 asks the whole network:
+“Who has 192.168.66.1?”
+ARP Reply:
+192.168.66.1 responds by :
+"hi, that's me. Here’s my MAC address: 44:df:65:d8:fe:6c.”
