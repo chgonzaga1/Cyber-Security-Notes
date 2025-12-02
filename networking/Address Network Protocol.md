@@ -42,6 +42,11 @@ ARP spoofing works because ARP has no authentication, meaning devices trust what
 Let's take a look of a screenshot
 Through the use of Wireshark, we can take a closer look of what's going on during a ARP request.
 
+The screenshot shows how Wireshark displays a packet using two different views.
+The top panel shows the human-readable, decoded information, like the source and destination MAC addresses, the protocol type (IPv4), and the higher level protocol layers such as TCP and TLS.
+The bottom panel shows the raw packet bytes, which are the actual binary data captured on the wire. These bytes are represented in hexadecimal. The destination MAC, source MAC, and EtherType (0800 for IPv4) in the bottom panel directly match the decoded fields in the top panel.
+In other words, the top panel explains what the packet means, and the bottom panel shows what the packet actually looks like in raw form.
+
 ![TCP Dump 1](https://github.com/chgonzaga1/Cyber-Security-Notes/blob/main/networking/images/tcpdump1.png)
 
 
