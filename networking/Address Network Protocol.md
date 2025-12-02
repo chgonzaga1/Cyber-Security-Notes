@@ -70,3 +70,12 @@ So basically Packet1 shows: sending this to the broadcast(ff:ff:ff:ff..),
         "Who has 192.168.66.1? I am 192.168.66.89, here is my MAC."
 
 Then at packet 2: Responding to the reqiest,  “192.168.66.1 is here. My MAC is 44:df:65:d8:fe:6c.” 
+
+Now this command line: 
+tcpdump -r arp.pcapng -n -v
+
+tcpdump is the command for packetsniffingtool. -r is read the file, arp.pcapng is the file name
+-n show ip and mac only as numbers, -v provides more details and we get
+
+17:23:44.506615 ARP, Ethernet (len 6), IPv4 (len 4), Request who-has 192.168.66.1 tell 192.168.66.89, length 28
+17:23:44.510182 ARP, Ethernet (len 6), IPv4 (len 4), Reply 192.168.66.1 is-at 44:df:65:d8:fe:6c, length 28
