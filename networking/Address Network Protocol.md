@@ -33,3 +33,10 @@ This enables the attacker to
 5. DoS a device by sending bogus ARP entries
 
 ARP spoofing works because ARP has no authentication, meaning devices trust whatever ARP reply they receive.
+
+https://github.com/chgonzaga1/Cyber-Security-Notes/blob/main/networking/images/arpwireshark.png
+
+Let's take a look of a screenshot
+Through the use of Wireshark, we can take a closer look of what's going on during a ARP request.
+
+networking/images/tcpdump1.png
