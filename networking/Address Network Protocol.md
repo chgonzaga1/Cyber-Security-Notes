@@ -32,4 +32,4 @@ This enables the attacker to
 4. Break connections
 5. DoS a device by sending bogus ARP entries
 
-ARP spoofing works because ARP has no authentication — devices trust whatever ARP reply they receive.
+ARP spoofing works because ARP has no authentication, meaning devices trust whatever ARP reply they receive.
