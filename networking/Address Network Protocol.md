@@ -42,6 +42,6 @@ ARP spoofing works because ARP has no authentication, meaning devices trust what
 Let's take a look of a screenshot
 Through the use of Wireshark, we can take a closer look of what's going on during a ARP request.
 
-![TCP Dump 1](networking/images/tcpdump1.png)
+![TCP Dump 1](https://github.com/chgonzaga1/Cyber-Security-Notes/blob/main/networking/images/tcpdump1.png)
 
 
