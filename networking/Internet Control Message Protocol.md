@@ -8,6 +8,9 @@ Think of ICMP as the network’s feedback system.
 
 Each ICMP message has:
 Type: what kind of message (e.g., echo request = 8, echo reply = 0)
+
 Code: extra details about the type
+
 Checksum: error detection
+
 Data: depends on the message, often includes the IP header + part of the original packet
