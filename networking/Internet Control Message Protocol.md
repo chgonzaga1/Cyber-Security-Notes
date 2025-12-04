@@ -44,8 +44,8 @@ a)Type 8 means echo request, Type 0 means echo response.  Type basically tells u
 
 b)The code provide details about ICMP message  
 
-c) A number used to match a request with its reply. It's like a tag to the message  
+c) ID is a number used to match a request with its reply. It's like a tag to the message  
 
-d) A sequence number is that matches the counter of each new echo request, it detects lost packages  
+d)  A sequence number is that matches the counter of each new echo request, it detects lost packages  
 
 e) Check sum is used for data integrity check. A way to detect packet corruption.  
