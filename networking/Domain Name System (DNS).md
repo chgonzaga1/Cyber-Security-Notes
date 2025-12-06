@@ -34,3 +34,12 @@ Once the resolver has the answer, it caches it so you don’t have to repeat all
 
 We will now take a look at nslookup command line, which retrives the IP address of a domain.  
 
+If you type in nslookup for www.google.com, it would return 10 results
+
+The first 4 are the ip4 address and the other is ipv6.
+
+If we type: nslookup www.google.com:
+<img width="518" height="390" alt="image" src="https://github.com/user-attachments/assets/a7904b6d-f811-4750-a51f-380152fbba16" />
+
+Important note:
+Google shows many IP addresses because they have tons of servers around the world. DNS gives me multiple IPv4 and IPv6 addresses so my computer can connect to the fastest or closest one. Big companies use many IPs for speed, load balancing ( a technique to split traffic to access a website), redundancy, and security. So seeing many DNS results for Google is normal.
