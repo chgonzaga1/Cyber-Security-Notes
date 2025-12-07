@@ -8,7 +8,7 @@ Each request is independent meaning it doesnt remember previous requests unless 
 or tokens are applied. However it is not secured. 
 
 Hackers can just intercept, read or modify the traffic. (Man in the middle attack)
-It is not recommende to type a password over a HTTP 
+It is not recommended to type a password over a HTTP 
 
 So it's recommended to HTTPS.
 
@@ -23,3 +23,14 @@ The ports for HTTP is 80 and HTTPS 443. Another alternative port for HTTPS is 84
 HTTP METHODS: GET, POST, PUT, DELETE
 
 //EXPLAIN THESE METHODS NEXT
+
+HTTP methods are basically the actions your browser or an app asks a web server to do.  
+Every time you click a link, submit a form, upload something, or delete something online,   
+one of these methods is being used behind the scenes.  
+
+1)Get: 
+
+Used to retrieve information from a server.  
+This is what happens when you open a webpage or load an image.  
+It never changes data on the server—it's only reading, not modifying.  
+An example would be: GET /profile/chris after you go to a link www.facebook/profile/bison
