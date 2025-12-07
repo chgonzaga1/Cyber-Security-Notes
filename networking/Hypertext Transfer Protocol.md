@@ -33,6 +33,12 @@ HTTP methods are basically the actions your browser or an app asks a web server 
 Every time you click a link, submit a form, upload something, or delete something online,   
 one of these methods is being used behind the scenes.  
 
+Note, we can use the HTTP methods from the terminal line when we connect to a server
+
+Example) 
+GET / file.html HTTP/1.1
+Host: anything
+
 1)Get: 
 
 Used to retrieve information from a server.  
