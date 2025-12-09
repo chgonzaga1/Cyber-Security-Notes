@@ -14,8 +14,8 @@ How  does SMTP work?
 6. Then finally the destination sever saves the email in the reciver's inbox. 
 
 SMTP also has commands
-Helo , starts the SMTP session on target client
-Mail From  ,  points the senders email address
-Rect to  , points to the reciever's email address
-Data  , inficates that it's going to send the actually email. This is where we type in the message.
-QUIT  //ends the session
+Helo , starts the SMTP session on target client  
+Mail From  ,  points the senders email address  
+Rect to  , points to the reciever's email address  
+Data  , inficates that it's going to send the actually email. This is where we type in the message.  
+QUIT  //ends the session  
