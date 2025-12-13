@@ -14,3 +14,17 @@ IMAP is used by GMAIL, outlook, yahoo, mobile device, cloud storage and large in
 IMAP also happens ot have sophisticated commands than pop3. 
 
 It's default ports are TCP 143 and IMAPS TCP 933. 
+
+Here are 
+LOGIN <username> <password> authenticates the user
+SELECT <mailbox> selects the mailbox folder to work with
+FETCH <mail_number> <data_item_name> Example fetch 3 body[] to fetch message number 3, header and body.
+MOVE <sequence_set> <mailbox> moves the specified messages to another mailbox
+COPY <sequence_set> <data_item_name> copies the specified messages to another mailbox
+STORE <sequence_set> <flags> adds or removes flags that are read /unread
+LOGOUT logs out
+CAPABILITY shows what features the iMAP server supports
+EXMAINE <MAILbox> Opens a mailbox in read-only mode.
+NOOP keeps the connection alive without doign anything
+
+Knowing that the IMAP server listens on TCP port 143 by default, we will use telnet to connect to 10.67.180.89’s port 143 and fetch the message we sent in an earlier task.
