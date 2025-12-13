@@ -24,3 +24,8 @@ QUIT	Close session and apply deletes
  LIST
  RETR 3
  
+Note that POP3 has security concerns such as man in the middle attacks and it's advised to use POP3S since it can be sniffed by hackers. 
+In POP3, the network traffic is unecrpyted. 
+
+Modern email systems prefer to use IMAP. 
+
