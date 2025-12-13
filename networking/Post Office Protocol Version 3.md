@@ -8,3 +8,19 @@ POP3 can also store emails on a local computer.
 Using a TCP connection to a POP3 server, we can connected to it after authenticate your username and password   
 
 From there, we can list messages, download, delete and check how many messages exist.
+
+USER <username>	Identify the user  
+PASS <password>	Provide password  
+STAT	Get number of messages + total size  
+LIST	List messages with sizes  
+RETR <msg no>	Download the message  
+DELE <msg no>	Mark message for deletion  
+QUIT	Close session and apply deletes  
+
+ example use: TELNET 10.241.56.2 110
+ USER CHRIS
+ PASS GUNIT
+ STAT 
+ LIST
+ RETR 3
+ 
