@@ -8,3 +8,5 @@ TLS provides two main guarantees: 1) Confidentiality and 2) Integrity
 2) With integrity, no one can modify the data and tampering is usually detected
 
 Without TLS, Online shopping and banking would be unsafe to use. Emails and text messages could be altered or read  
+
+HTTPS, IMAPS, POP3S are an examples of TLS protocol being implemented.  
