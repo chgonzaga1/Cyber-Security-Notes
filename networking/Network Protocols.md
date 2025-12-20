@@ -14,6 +14,7 @@ HTTPS, IMAPS, POP3S are an examples of TLS protocol being implemented.
 It's important to note that encryption without identity verification would still allow man in the-middle (MITM) attacks.   
 That’s where TLS certificates and Certificate Authorities (CAs) implemented.  
 
+A TLS certificate confirms the authenticity of the server’s identity, it's public key and a trusted authority who vouches for it
 
-
+Trusted Authority:  
 
