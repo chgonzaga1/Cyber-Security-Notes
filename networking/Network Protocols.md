@@ -18,21 +18,20 @@ A TLS certificate confirms the authenticity of the server’s identity, its publ
 
 The certificate creation process: 
 
-Step 1: Server creates a CSR  
+1) Server creates a CSR  
 The server admin generates a Certificate Signing Request (CSR)
 The CSR contains: Domain name, Public key, Organization info
 
-Step 2: CSR is sent to a Certificate Authority (CA)   
+2) CSR is sent to a Certificate Authority (CA)   
 Examples of CAs:   
 DigiCert   
 GlobalSign   
 Let’s Encrypt   
-Sectigo  
-
-Step 3: CA verifies the request  
+Sectigo    
+3) CA verifies the request  
 
 Confirms domain ownership and performs identity checks (depending on cert type)  
 
-Step 4: CA issues a signed certificate    
+Step 4) CA issues a signed certificate    
 
 The CA digitally signs the certificate and this signature is what browsers later verify  
