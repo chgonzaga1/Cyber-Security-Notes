@@ -71,3 +71,33 @@ SFTP is often confused with FTPS, but they are different technologies. FTPS (Fil
 FTPS typically uses port 990, requires TLS certificates, and can be harder to configure through strict firewalls because it uses separate control and data connections.  
 
 Overall, SFTP is easier to set up and manage since it only requires SSH, whereas FTPS relies on TLS certificates and more complex networking rules, similar to other TLS-secured protocols such as HTTPS or IMAPS.  
+
+-VPN-
+
+VPN Architecture and Traffic Flow Overview
+
+A VPN allows remote offices or users to securely connect to a main branch network as if they were physically on-site (but they're remotely) . In a typical setup, a VPN server is located at the main branch, while VPN clients are used by remote branches or individual users. Once connected, a secure encrypted tunnel is established over the Internet.  
+
+In a site-to-site VPN, entire remote networks connect to the main branch. All devices at the remote office send their traffic through a VPN gateway, which encrypts the data before sending it across the Internet. The encrypted traffic travels through the VPN tunnel and is decrypted only after reaching the main branch network.  
+
+In a remote-access VPN, individual users connect directly to the main branch using a VPN client on their device. This setup is common for remote workers and provides secure access to internal resources without exposing traffic to the public Internet.  
+
+**VPN Tunneling and Internet Traffic Behavior**
+
+Once a VPN tunnel is established, most or all Internet traffic is routed through the VPN server. As a result:
+
+External websites and services see the VPN server’s public IP address, not the user’s real IP.
+
+The local ISP can only see encrypted traffic, limiting its ability to inspect or censor activity.
+
+This behavior is often used to bypass geographical restrictions.
+
+For example, if a user connects to a VPN server located in Japan, websites will treat the user as if they are physically in Japan and may automatically serve region-specific content (such as a Japanese version of a website).
+
+Important Considerations:
+
+Not all VPNs route all traffic through the tunnel. Some are configured only to allow access to private internal networks (split tunneling).  
+
+Some VPN servers may leak the user’s real IP address if misconfigured, so verification tests (such as DNS leak tests) are recommended.  
+
+VPN usage may be restricted or illegal in certain countries, so local laws should always be checked before using a VPN.  
