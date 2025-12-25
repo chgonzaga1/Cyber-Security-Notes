@@ -56,3 +56,5 @@ Cryptographic checks ensure that data is not altered while being transmitted.
 
 d) Tunneling  
 SSH can securely forward other network protocols, creating a VPN-like encrypted tunnel.  
+
+e) SSH allows graphical applications from a remote Unix-like system to be displayed and used locally.
