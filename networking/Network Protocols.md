@@ -58,3 +58,16 @@ d) Tunneling
 SSH can securely forward other network protocols, creating a VPN-like encrypted tunnel.  
 
 e) SSH allows graphical applications from a remote Unix-like system to be displayed and used locally.
+
+ssh username@host to use SSH command line
+
+-SFTP-
+
+SFTP (SSH File Transfer Protocol) is a secure way to transfer files that runs over SSH and uses port 22.  
+It’s part of the SSH suite, so once SFTP is enabled on an OpenSSH server, you can connect with a command like sftp username@hostname and upload or download files using simple Unix-style commands such as get and put.  
+
+SFTP is often confused with FTPS, but they are different technologies. FTPS (File Transfer Protocol Secure) is FTP secured with TLS, similar to how HTTPS secures HTTP.   
+
+FTPS typically uses port 990, requires TLS certificates, and can be harder to configure through strict firewalls because it uses separate control and data connections.  
+
+Overall, SFTP is easier to set up and manage since it only requires SSH, whereas FTPS relies on TLS certificates and more complex networking rules, similar to other TLS-secured protocols such as HTTPS or IMAPS.  
